@@ -30,5 +30,9 @@ public class SaleController {
 		return service.findSales(minDate, maxDate, pegeable);
 		
 	}
+	@GetMapping(value = "/findAllSale")
+	public List<Sale> findAllSale(){
+		return service.findAllSales();
+	}
 
 }
